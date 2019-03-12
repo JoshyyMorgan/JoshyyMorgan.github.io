@@ -35,7 +35,7 @@ checkValid = () =>{
         localStorage.setItem('login-status','1');
         alert('Login successfully! You will be redirected to home page in 3 second!');
         setTimeout(function(){
-            document.location = 'home.html';
+            document.location = 'index.html';
         },delayInMilliseconds)
     }
     //deny access
@@ -49,5 +49,5 @@ logout =() =>{
     console.log("log out")
     localStorage.setItem('login-status','0');
     alert('Logout successfully!');
-    document.location = 'home.html';
+    document.location = 'index.html';
 }

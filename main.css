@@ -71,3 +71,6 @@
     color: white;
 }
 
+#logout{
+    display: none;
+}
