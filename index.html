@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
     <!--Start of Tawk.to Script-->
     <script type="text/javascript">
     var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
@@ -21,29 +22,33 @@
     })();
     </script>
     <!--End of Tawk.to Script-->
+    <script>
+        if(localStorage.getItem('login-status') == null){
+            localStorage.setItem('login-status', 0);
+        }
+    </script>
 </head>
 <body>
     </div>
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
-            <div class="container">
-                <a class="navbar-brand d-none d-sm-inline-block" href="home.html" >
-                    <img src="#" style="width: 80px;" alt="My Books logo">
-                </a>
-                <div class="nav-bar nav" >
-                    <div class="dropdown">
-                        <input type="text" id="booksearch" placeholder="Search for books...">
-                        <div class="dropdown-content">
-                            <ul id="booklist">
-                            </ul>
-                        </div>
-                    </div >
-                        <a class="nav-item nav-link active" href="index.html">Home</a>
-                        <a class="nav-item nav-link" href="manga-page-1.html">Manga</a>
-                        <a class="nav-item nav-link" href="novel-page-1.html">Novel</a>
-                        <a class="nav-item nav-link" href="about.html">About</a>
-                        <a class="nav-item nav-link" id='login' href="login.html">Login</a>
-                        <p  onclick = "logout()" id="logout" >Logout</p>
-                    </div>    
+        <div class="container">
+            <a class="navbar-brand d-none d-sm-inline-block" href="home.html" >
+                <img src="#" style="width: 80px;" alt="My Books logo">
+            </a>
+            <div class="nav-bar nav" >
+                <div class="dropdown  mt-1">
+                    <input type="text" id="booksearch" placeholder="Search for books...">
+                    <div class="dropdown-content">
+                        <ul id="booklist">
+                        </ul>
+                    </div>
+                </div >
+                <a class="nav-item nav-link active" href="index.html">Home</a>
+                <a class="nav-item nav-link" href="manga-page-1.html">Manga</a>
+                <a class="nav-item nav-link" href="novel-page-1.html">Novel</a>
+                <a class="nav-item nav-link" href="about.html">About</a>
+                <a class="nav-item nav-link" id='login' href="login.html">Login</a>
+                <p  onclick = "logout()" id="logout" >Logout</p>  
             </div>
         </div>
     </nav>

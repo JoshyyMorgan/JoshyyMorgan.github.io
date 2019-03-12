@@ -7,8 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
     <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/5c87517e101df77a8be21b3e/default';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+
+    <script>
+        if(localStorage.getItem('login-status') == null){
+            localStorage.setItem('login-status', 0);
+        }
+    </script>
 </head>
 <body>
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
@@ -24,11 +43,12 @@
                         </ul>
                     </div>
                 </div>
-                <a class="nav-item nav-link" href="home.html">Home</a>
-                <a class="nav-item nav-link active" href="manga-page-1.html">Manga</a>
-                <a class="nav-item nav-link" href="#">Novel</a>
+                <a class="nav-item nav-link active" href="index.html">Home</a>
+                <a class="nav-item nav-link" href="manga-page-1.html">Manga</a>
+                <a class="nav-item nav-link" href="novel-page-1.html">Novel</a>
                 <a class="nav-item nav-link" href="about.html">About</a>
-                <a class="nav-item nav-link" href="#">Login</a>
+                <a class="nav-item nav-link" id='login' href="login.html">Login</a>
+                <p  onclick = "logout()" id="logout" >Logout</p>  
             </div>
         </div>
     </nav>

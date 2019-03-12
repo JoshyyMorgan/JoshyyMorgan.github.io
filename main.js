@@ -2,7 +2,7 @@ window.onload = () =>  {
     //Global vars
     var list = document.querySelector('#booklist')
     var input = document.querySelector('#booksearch')
-
+    
     //Functions
     loadList = (content) => {
         list.style.display = 'block'
