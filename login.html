@@ -8,9 +8,6 @@
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
     <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-
-
-
 </head>
 <body>
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
@@ -18,33 +15,48 @@
             <a class="navbar-brand d-none d-sm-inline-block" href="index.html" >
                 <img src="#" style="width: 80px;" alt="My Books logo">
             </a>
-            <div class="nav-bar nav ">
-                <div class="dropdown">
+            <div class="nav-bar nav" >
+                <div class="dropdown  mt-1">
                     <input type="text" id="booksearch" placeholder="Search for books...">
                     <div class="dropdown-content">
                         <ul id="booklist">
                         </ul>
                     </div>
-                </div>
+                </div >
                 <a class="nav-item nav-link" href="index.html">Home</a>
                 <a class="nav-item nav-link" href="manga-page-1.html">Manga</a>
                 <a class="nav-item nav-link" href="novel-page-1.html">Novel</a>
                 <a class="nav-item nav-link" href="about.html">About</a>
                 <a class="nav-item nav-link active" id='login' href="login.html">Login</a>
-                <p  onclick = "logout()" id="logout" >Logout</p>                 
+                <p  onclick = "logout()" id="logout" >Logout</p>  
             </div>
         </div>
     </nav>
-    <div>
-        <form id="login">
-            Username <input type="text" id = "usernameL" placeholder="Username..." required>
-            Password <input type="password" id = "passwordL" placeholder="Password..." required>
-        </form>
-        <button onclick="checkValid()">Go</button>
-        <a href="create-acc.html">Create a new account.</a>
-        <p id='login-error'></p>
+    <div class = "container mt-5" >
+        <div class = "row ">
+                <div class="col-md-4 mt-4"></div>
+                <div class="col-md-4 mt-4 text-center" id = "loginSection">
+                        <form>
+                            <div>
+                                <input type="text" id = "usernameL" placeholder="Username..." required>
+                            </div>
+                            <div class="mt-1">
+                                <input type="password" id = "passwordL" placeholder="Password..." required>
+                            </div>
+                        </form>
+                        <div>
+                            <p id='login-error'></p>
+                        </div>
+                        <button onclick="checkValid()">Go</button>
+                        <div>
+                            <a href="create-acc.html">Create a new account.</a>
+                        </div>
+                </div>
+                <div class="col-md-4 mt-4"></div>
+        </div>
+        
         <p></p>
-        <p>The system is still in developing progess!!!</p>
+        <!-- <p>The system is still in developing progess!!!</p> -->
     </div>
         
     <!-- jQuery library -->

@@ -52,14 +52,28 @@
             </div>
         </div>
     </nav>
-    <div>
-        <form id="login">
-            Username <input type="text" id = "username" placeholder="Username..." required>
-            Password <input type="password" id = "password" placeholder="Password..." required>
-            Comfirm password <input type="password" id = "password2" placeholder="Re-enter password" required>
-        </form>
-        <button onclick="saveUP()">Go</button>
-        <p id="create-error"></p>
+    <div class = "container mt-3">
+        <div class = "row ">
+            <div class="col-md-4 mt-4"></div>
+            <div class="col-md-4 mt-4 text-center" id = "loginSection">
+                <form>
+                    <div>
+                        Username <input type="text" id = "username" placeholder="Username..." required>
+                    </div>
+                    <div class="mt-1">
+                        Password <input type="password" id = "password" placeholder="Password..." required>
+                    </div>
+                    <div class="mt-1">
+                        Comfirm password <input type="password" id = "password2" placeholder="Re-enter password" required>
+                    </div>
+                </form>
+                <div>
+                    <p id="create-error"></p>
+                </div>
+                <button onclick="saveUP()">Go</button>
+            </div>
+            <div class="col-md-4 mt-4"></div>
+        </div>        
     </div>
         
     <!-- jQuery library -->

@@ -101,3 +101,12 @@ hr {
     margin: auto;
     width: 40%;
 }
+
+#loginSection{
+    width: 400px;
+    clear: both;
+}
+#loginSection input{
+    width: 100%;
+    clear: both;
+}
