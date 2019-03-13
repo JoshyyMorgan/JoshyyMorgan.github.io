@@ -179,7 +179,7 @@ hr {
     }
 
 }
-
+.carousel-item {margin-right: auto !important;} 
  /* Bootstrap Lightbox using Modal */
 
 #profile-grid { overflow: auto; white-space: normal; } 
