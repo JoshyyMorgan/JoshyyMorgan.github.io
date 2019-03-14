@@ -16,6 +16,7 @@
 }
 .active{    
     color: white;
+    font-weight: bold;
 }
 .col-md-3{
     text-align: center;
