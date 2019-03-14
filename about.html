@@ -36,6 +36,9 @@
             localStorage.setItem('login-status', 0);
         }
     </script>
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
@@ -44,6 +47,13 @@
                 <img src="logo.png" style="width: 40px;" alt="My Books logo">
             </a>
             <div class="nav-bar nav">
+                <div class="dropdown  mt-1">
+                    <input type="text" id="booksearch" placeholder="Search for books...">
+                    <div class="dropdown-content">
+                        <ul id="booklist">
+                        </ul>
+                    </div>
+                </div >
                 <a class="nav-item nav-link" href="index.html">Home</a>
                 <a class="nav-item nav-link" href="manga-page-1.html">Manga</a>
                 <a class="nav-item nav-link" href="novel-page-1.html">Novel</a>
@@ -53,11 +63,28 @@
             </div>
         </div>
     </nav>
-    <div>
-        <p id ="about" class="container">
-            This is a website for selling books and Novel
-
-        </p>
+    <div class="container">
+        <div class = "row">
+            <div class = "col-lg-2" ></div>
+            <div class = "col-lg-8 mt-3">
+                <p><strong>My Books Store Info:</strong></p>
+                <ul>
+                    <li>My Books - owned by Joshy</li>
+                    <li><strong>Address:</strong> 97 st no.3, Lu Gia, no.15 Ward ,no.11 District, Ho Chi Minh City, Vietnam </li>
+                </ul>
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d3919.500620465723!2d106.65269161419373!3d10.772916992323937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e3!4m0!4m5!1s0x31752ec0f752c0ab%3A0x8980ef2f26ccac87!2zOTcgU-G7kSAzIEPGsCBYw6EgTOG7ryBHaWEsIFBoxrDhu51uZyAxNSwgUXXhuq1uIDExLCBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!3m2!1d10.772917!2d106.6548803!5e0!3m2!1svi!2s!4v1552530106247" width="730" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+                <div class= "text-center mt-5">
+                    <p class = "Contactus">Contact us at:</p>
+                    <a href="https://www.facebook.com/mybooksJ" class="fa fa-facebook"></a>
+                    <br>
+                    <p class = "mt-1">or</p>
+                    <i class="fa fa-phone"> (+84) 778967494</i>
+                </div>
+            </div>
+            <div class = "col-lg-2" ></div>        
+        </div>
     </div>
     <script src="database.js"></script>
     <script src="main.js"></script>
