@@ -186,29 +186,6 @@ hr {
 #profile-grid .panel-thumbnail { overflow: hidden; }
 #profile-grid .img-rounded { border-radius: 4px 4px 0 0;}
 
-/* .carousel-control-prev-icon,
-.carousel-control-next-icon {
-  height: 100px;
-  width: 100px;
-  outline: black;
-  background-size: 100%, 100%;
-  border-radius: 50%;
-  border: 1px solid black;
-  background-image: none;
-}
-
-.carousel-control-next-icon:after
-{
-  content: '>';
-  font-size: 55px;
-  color: black;
-}
-
-.carousel-control-prev-icon:after {
-  content: '<';
-  font-size: 55px;
-  color: black;
-} */
 .carousel-control-prev-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
    }
@@ -235,7 +212,7 @@ hr {
     clear: both;
 }
 #loginSection{
-    background: rgb(68, 36, 155);
+    background: peachpuff;
     border-width:3px !important;
 }
 #loginWord{
@@ -245,11 +222,11 @@ hr {
     
 }
 #accCreate{
-    font-size: 14px;
-    color: rgb(227, 247, 114);
+    font-size: 20px;
+    color: rgb(77, 151, 224);
 }
 #createAccForm{
-    color: aliceblue;
+    color: black;
     font-weight: bold;
 }
 
