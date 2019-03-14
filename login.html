@@ -35,9 +35,10 @@
     <div class = "container mt-5" >
         <div class = "row ">
             <div class="col-md-4 mt-4"></div>
-            <div class="col-md-4 mt-4 text-center" id = "loginSection">
+            <div class="col-md-4 mt-4 text-center border border-dark" id = "loginSection">
                     <form>
-                        <div>
+                        <p id="loginWord">Login</p>
+                        <div class="mt-2">
                             <input type="text" id = "usernameL" placeholder="Username..." required>
                         </div>
                         <div class="mt-1">
@@ -49,7 +50,7 @@
                     </div>
                     <button onclick="checkValid()">Go</button>
                     <div>
-                        <a href="create-acc.html">Create a new account.</a>
+                        <a href="create-acc.html"  id="accCreate">Create a new account.</a>
                     </div>
             </div>
             <div class="col-md-4 mt-4"></div>

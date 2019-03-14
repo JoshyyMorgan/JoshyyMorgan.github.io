@@ -103,14 +103,7 @@ hr {
     width: 40%;
 }
 
-#loginSection{
-    width: 400px;
-    clear: both;
-}
-#loginSection input{
-    width: 100%;
-    clear: both;
-}
+
 
 
 @media (min-width: 768px) {
@@ -223,7 +216,43 @@ hr {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
 }
 .Contactus{
-    color: black;
+    margin-top: 1em;
+    color: rgb(58, 134, 221);
     font-size: 20px;
+    font-weight: bold;
+}
+.page-footer{
+    background: indigo;
+    color: white;
+}
+#loginSection{
+    width: 400px;
+    clear: both;
+}
+#loginSection input{
+    width: 100%;
+    clear: both;
+}
+#loginSection{
+    background: rgb(68, 36, 155);
+    border-width:3px !important;
+}
+#loginWord{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    
+}
+#accCreate{
+    font-size: 14px;
+    color: rgb(227, 247, 114);
+}
+#createAccForm{
+    color: aliceblue;
+    font-weight: bold;
+}
+
+#create-error, #login-error{
+    color: rgb(233, 56, 56);
     font-weight: bold;
 }

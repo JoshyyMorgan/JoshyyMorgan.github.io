@@ -55,8 +55,8 @@
     <div class = "container mt-3">
         <div class = "row ">
             <div class="col-md-4 mt-4"></div>
-            <div class="col-md-4 mt-4 text-center" id = "loginSection">
-                <form>
+            <div class="col-md-4 mt-4 text-center border border-dark" id = "loginSection">
+                <form id="createAccForm">
                     <div>
                         Username <input type="text" id = "username" placeholder="Username..." required>
                     </div>
@@ -70,7 +70,7 @@
                 <div>
                     <p id="create-error"></p>
                 </div>
-                <button onclick="saveUP()">Go</button>
+                <button class="mb-2" onclick="saveUP()">Go</button>
             </div>
             <div class="col-md-4 mt-4"></div>
         </div>        
